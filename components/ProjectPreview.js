@@ -39,8 +39,8 @@ export default function ProjectPreview({ data, selected, onPress }) {
                     </div>
                     <p className="text-black text-l "> {data.previewText ?? loremIpsum.slice(0, 300)} </p>
 
-                    <div className='previewButton  mx-auto flex flex-col justify-center gap-2 pt-8'>
-                        <ProjectButtons project={data} buttonStyle={'blackBorderButton inline'} details={true} />
+                    <div className='previewButton    mx-auto flex flex-col justify-center gap-2 pt-8'>
+                        <ProjectButtons project={data} buttonStyle={'blackBorderButton flex-nowrap flex-inline text-center justify-center'} details={true} />
                     </div>
                 </div>
             }
