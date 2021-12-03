@@ -7,6 +7,7 @@ previewText: The site you're looking at, quite meta isn't it? Showcase of progre
 images:
     - emkorp/emkorp_29-11.webp
     - emkorp/emkorp22-11-projects-full.jpg
+    - emkorp/board.jpg
 
 
 projectUrl: http://emkorp.vercel.app

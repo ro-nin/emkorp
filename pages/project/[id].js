@@ -12,7 +12,7 @@ export default function Project({ postData }) {
     const intl = useIntl();
     const dateTime = parseISO(postData.date);
 
-    return <div className="flex flex-col pr-12 gap-1">
+    return <div id="header" className="flex flex-col pr-12  gap-1">
         <Head>
             <title>{postData.title}</title>
             <link rel="icon" href="/favicon.ico" />
@@ -41,7 +41,7 @@ export default function Project({ postData }) {
         </Head>
 
 
-        <h1>{postData.title}</h1>
+        <h1 className='pt-6'>{postData.title}</h1>
         <h2>{t('released')} {intl.formatDateTime(dateTime, { year: 'numeric', month: 'long' })}</h2>
         <div className='flex gap-4 '>
             {postData.stack.map(item => getIcon(item, 45))}

@@ -22,7 +22,7 @@ export default function ProjectButtons({ project, details, buttonStyle }) {
             </a>
             }
 
-            {details && <Link href={'/project/' + project.id} passHref >
+            {details && <Link href={'/project/' + project.id+'#header'} passHref >
                 <a type='button' className={buttonStyle}>
                     <GrMoreVertical className='self-center' />
                     <p >{sharedTranslator('buttons.readMore').toUpperCase()}</p>
