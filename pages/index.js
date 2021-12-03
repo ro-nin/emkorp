@@ -58,18 +58,22 @@ export default function Home({ sortedProjectsData, }) {
           content="website"
         />
 
+        <meta name="google-site-verification" content="JkTwPy3QneN1TXTJzNIEPdLdnAr9R_lfisbkr2lxhgI" />
 
-      </Head>
-      <Script strategy="afterInteractive" src={"https://www.googletagmanager.com/gtag/js?id=G-C5VJ0MYY69"} />
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
+        <Script strategy="afterInteractive" src={"https://www.googletagmanager.com/gtag/js?id=G-C5VJ0MYY69"} />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){window.dataLayer.push(arguments);}
           gtag('js', new Date());
 
           gtag('config', 'G-C5VJ0MYY69');
         `}
-      </Script>
+        </Script>
+      </Head>
+
+
+
       <main id="main" className="text-center mb-0 min-h-fullscreen ">
         <LandingIntro links={shortContacts} />
         <AboutMe links={shortContacts} />
