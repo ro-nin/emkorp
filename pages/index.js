@@ -60,8 +60,11 @@ export default function Home({ sortedProjectsData, }) {
 
         <meta name="google-site-verification" content="JkTwPy3QneN1TXTJzNIEPdLdnAr9R_lfisbkr2lxhgI" />
 
-        <Script strategy="afterInteractive" src={"https://www.googletagmanager.com/gtag/js?id=G-C5VJ0MYY69"} />
-        <Script id="google-analytics" strategy="afterInteractive">
+
+      </Head>
+      <Script strategy="afterInteractive" src={"https://www.googletagmanager.com/gtag/js?id=G-C5VJ0MYY69"} />
+
+      <Script id="google-analytics" strategy="afterInteractive">
           {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){window.dataLayer.push(arguments);}
@@ -70,9 +73,6 @@ export default function Home({ sortedProjectsData, }) {
           gtag('config', 'G-C5VJ0MYY69');
         `}
         </Script>
-      </Head>
-
-
 
       <main id="main" className="text-center mb-0 min-h-fullscreen ">
         <LandingIntro links={shortContacts} />

@@ -27,7 +27,7 @@ export default function ProjectPreview({ data, selected, onPress }) {
                     src={imageUrl}
                     layout="fill"
                     objectFit="cover"
-                    priority="true"
+                    
                 />
             </div>
             {selected &&
