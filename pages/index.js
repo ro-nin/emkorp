@@ -11,7 +11,7 @@ import Script from 'next/script'
 import { useRouter } from 'next/router'
 export default function Home({ sortedProjectsData, }) {
   const { allProjects } = sortedProjectsData.projects
-  
+
   const Router = useRouter()
 
   const shortContacts = [
@@ -20,24 +20,14 @@ export default function Home({ sortedProjectsData, }) {
     Resources.linkedinContact,
   ]
 
-  if(Router.locale === 'it'){
+  if (Router.locale === 'it') {
     shortContacts.push(Resources.cvIT)
-  }else{
+  } else {
     shortContacts.push(Resources.cvEN)
   }
 
   return (
     <>
-      <Script strategy="afterInteractive" src={`https://www.googletagmanager.com/gtag/js?id=G-C5VJ0MYY69`} />
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){window.dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-C5VJ0MYY69');
-        `}
-      </Script>
 
       <Head>
         <title>EMKORPORATION</title>
@@ -70,7 +60,16 @@ export default function Home({ sortedProjectsData, }) {
 
 
       </Head>
+      <Script strategy="afterInteractive" src={"https://www.googletagmanager.com/gtag/js?id=G-C5VJ0MYY69"} />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
 
+          gtag('config', 'G-C5VJ0MYY69');
+        `}
+      </Script>
       <main id="main" className="text-center mb-0 min-h-fullscreen ">
         <LandingIntro links={shortContacts} />
         <AboutMe links={shortContacts} />
