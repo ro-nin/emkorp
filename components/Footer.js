@@ -1,5 +1,5 @@
 import * as Strings from '../Resources'
-import Image from 'next/Image'
+import Image from 'next/image'
 import TextBlackLogo from '../public/logo/textBlackLogo.svg'
 import SquareLogo from '../public/logo/squareLogo.svg'
 import SketchLogo from '../public/logo/sketchLogo.svg'

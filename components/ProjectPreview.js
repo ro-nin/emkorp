@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from 'next/Image'
+import Image from 'next/image'
 import { parseISO } from 'date-fns'
 import { useTranslations } from 'next-intl'
 import { getIcon } from "../Resources"

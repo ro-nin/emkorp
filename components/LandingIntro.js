@@ -1,4 +1,4 @@
-import Image from 'next/Image'
+import Image from 'next/image'
 import SquareLogo from '../public/logo/squareLogo.svg'
 import { AiOutlineDown } from 'react-icons/ai'
 

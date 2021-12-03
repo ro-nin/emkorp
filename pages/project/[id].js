@@ -1,7 +1,7 @@
 import ProjectLayout from "../../components/layouts/ProjectLayout"
 import { getAllProjectIds, getProjectData } from "../../lib/projects"
 import markdownStyles from '../../styles/markdown-styles.module.css'
-import Image from 'next/Image'
+import Image from 'next/image'
 import { useIntl, NextIntlProvider, useTranslations } from 'next-intl';
 import ProjectButtons from "../../components/ProjectButtons"
 import { parseISO } from 'date-fns'
