@@ -43,11 +43,15 @@ export default function Home({ sortedProjectsData, }) {
         />
         <meta
           name="og:image"
-          content={'http://emkorp.vercel.app/logo/textBlackLogo.svg'}
+          content={'http://emkorp.vercel.app/logo/textBlackLogo.jpg'}
         />
         <meta
           property="og:image"
-          content={'http://emkorp.vercel.app/logo/textBlackLogo.svg'}
+          content={'http://emkorp.vercel.app/logo/textBlackLogo.jpg'}
+        />
+        <meta
+          property="og:image:alt"
+          content={'EMKORP logo'}
         />
         <meta
           property="og:url"
@@ -63,7 +67,7 @@ export default function Home({ sortedProjectsData, }) {
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="EMKORP." />
         <meta name="twitter:description" content="Web/Game development porfolio." />
-        <meta name="twitter:image" content="http://emkorp.vercel.app/logo/textBlackLogo.svg" />
+        <meta name="twitter:image" content="http://emkorp.vercel.app/logo/textBlackLogo.jpg" />
 
       </Head>
       <Script strategy="afterInteractive" src={"https://www.googletagmanager.com/gtag/js?id=G-C5VJ0MYY69"} />
