@@ -2,7 +2,7 @@ A static site portfolio built in Next.js.
 
 Deployed at http://emkorp.vercel.app
 
-
+```
 # project markdown schema:
 ---
 title: 
@@ -20,7 +20,5 @@ stack:
     ...
 ---
 
-ProjectBody
-
-<!-- ![alt text](relativeurlImage) -->
-
+ProjectBodyText
+```
