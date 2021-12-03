@@ -1,4 +1,4 @@
-A static site portfolio built in Next.js.
+A static site portfolio built with Next.js and Tailwind.
 
 Deployed at http://emkorp.vercel.app
 
