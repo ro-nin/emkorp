@@ -34,20 +34,20 @@ export default function Home({ sortedProjectsData, }) {
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Web/Game Development Portfolio EMKORP"
+          content="Web/Game Development Portfolio"
         />
-        <meta property="og:title" content="EMKORPORATION - Portfolio" />
+        <meta property="og:title" content="EMKORP." />
         <meta
           property="og:description"
-          content="Web/Game Development Portfolio EMKORP"
+          content="Web/Game Development Portfolio"
         />
         <meta
           name="og:image"
-          content={SquareLogo}
+          content={'http://emkorp.vercel.app/logo/textBlackLogo.svg'}
         />
         <meta
           property="og:image"
-          content={SquareLogo}
+          content={'http://emkorp.vercel.app/logo/textBlackLogo.svg'}
         />
         <meta
           property="og:url"
@@ -60,19 +60,23 @@ export default function Home({ sortedProjectsData, }) {
 
         <meta name="google-site-verification" content="JkTwPy3QneN1TXTJzNIEPdLdnAr9R_lfisbkr2lxhgI" />
 
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="EMKORP." />
+        <meta name="twitter:description" content="Web/Game development porfolio." />
+        <meta name="twitter:image" content="http://emkorp.vercel.app/logo/textBlackLogo.svg" />
 
       </Head>
       <Script strategy="afterInteractive" src={"https://www.googletagmanager.com/gtag/js?id=G-C5VJ0MYY69"} />
 
       <Script id="google-analytics" strategy="afterInteractive">
-          {`
+        {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){window.dataLayer.push(arguments);}
           gtag('js', new Date());
 
           gtag('config', 'G-C5VJ0MYY69');
         `}
-        </Script>
+      </Script>
 
       <main id="main" className="text-center mb-0 min-h-fullscreen ">
         <LandingIntro links={shortContacts} />

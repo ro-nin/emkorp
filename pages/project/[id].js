@@ -12,18 +12,18 @@ export default function Project({ postData }) {
     const intl = useIntl();
     const dateTime = parseISO(postData.date);
 
-    return <div id="header" className="flex flex-col pr-12  gap-1">
+    return <div  className="flex flex-col pr-12  gap-1">
         <Head>
             <title>{postData.title}</title>
             <link rel="icon" href="/favicon.ico" />
             <meta
                 name="description"
-                content={"EMKORP project "+postData.title}
+                content={"EMKORP project " + postData.title}
             />
-            <meta property="og:title" content={"EMKORPORATION - "+postData.title} />
+            <meta property="og:title" content={"EMKORPORATION - " + postData.title} />
             <meta
                 property="og:description"
-                content={"EMKORP project "+postData.title}
+                content={"EMKORP project " + postData.title}
             />
             <meta
                 name="og:image"
@@ -37,6 +37,12 @@ export default function Project({ postData }) {
                 property="og:type"
                 content="website"
             />
+
+
+            <meta name="twitter:card" content="summary" />
+            <meta name="twitter:title" content={"EMKORPORATION - " + postData.title} />
+            <meta name="twitter:description" content={postData.previewText} />
+            <meta name="twitter:image" content={postData.previewImage} />
 
         </Head>
 
