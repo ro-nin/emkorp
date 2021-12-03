@@ -1,0 +1,28 @@
+{
+    "index": {
+        "shortBio": {
+            "educationTitle": "Laureato Magistrale in Informatica",
+            "quote": "",
+            "bioText":"Sviluppatore Software, appassionato di un po' troppe cose. Mi concentro su sviluppo e web design  e design dal 2021."
+        }
+    },
+    "shared": {
+        "sections": {
+            "websites": "{items,plural, =1 {Sito Web} other {Siti Web}}",
+            "games": "{items,plural, =1 {Videogioco} other {Videogiochi}}",
+            "about":"About Me",
+            "projectShowcase":"Portfolio"
+        },
+        "buttons": {
+            "visit": "Visita",
+            "readMore": "Leggi di più",
+            "source": "Codice Sorgente"
+        }        ,
+        "cvURL": "/cv_2021_it_noP.pdf"
+    },
+    "project":{
+        "released":"Rilasciato a "
+    }
+    
+    
+}

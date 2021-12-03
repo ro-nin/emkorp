@@ -1,0 +1,29 @@
+{
+    "index": {
+        "shortBio": {
+            "educationTitle": "Master's Degree in Computer Science",
+            "quote": "",
+            "bioText":"Software Developer passioned about too many things. Currently based in Italy. Focusing on web development and design since 2021."
+
+        }
+    },
+    "shared": {
+        "sections": {
+            "websites": "{items,plural, =1 {Website} other {Websites}}",
+            "games": "{items,plural, =1 {Videogame} other {Videogames}}",
+            "about":"About Me",
+            "projectShowcase":"Portfolio"
+        },
+        "buttons":{
+            "visit":"Visit",
+            "readMore":"Read More",
+            "source":"Source Code"
+        },
+        "cvURL": "/cv_2021_en_noP.pdf"
+
+
+    },
+    "project":{
+        "released":"Released in "
+    }
+}
