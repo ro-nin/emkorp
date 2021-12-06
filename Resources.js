@@ -1,5 +1,5 @@
 
-import { SiNextdotjs,SiTailwindcss,SiStrapi} from 'react-icons/si'
+import { SiNextdotjs,SiTailwindcss,SiStrapi,SiAdobeillustrator} from 'react-icons/si'
 import { FaLinkedin,FaUnity,FaAndroid,FaUikit,FaGithub,FaNodeJs} from 'react-icons/fa'
 import { BsBootstrapFill } from 'react-icons/bs'
 import { DiMongodb } from 'react-icons/di'
@@ -44,6 +44,8 @@ export function getIcon(iconName, size) {
     switch (iconName) {
         case 'translate':
             return <RiTranslate  key={RiTranslate} size={size} />;
+        case 'illustrator':
+            return <SiAdobeillustrator  key={SiAdobeillustrator} size={size} />;
         case 'nextjs':
             return <SiNextdotjs  key={SiNextdotjs} size={size} />;
         case 'unity':
