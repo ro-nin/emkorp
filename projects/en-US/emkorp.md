@@ -1,7 +1,7 @@
 ---
 title: EMKORP
 date: "2021-12-03"
-category: web
+category: websites
 previewImage: 
 previewText: The site you're looking at, quite meta isn't it? Showcase of progress made through years.
 images:

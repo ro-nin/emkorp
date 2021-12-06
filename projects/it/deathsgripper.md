@@ -1,7 +1,7 @@
 ---
 title: Deaths Gripper
 date: "2017-01-06"
-category: game
+category: games
 previewImage: dg/logo.jpg
 previewText: Endless Runner per computer ispirato ad un video musicale. 
 images:

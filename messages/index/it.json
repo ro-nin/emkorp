@@ -10,6 +10,7 @@
         "sections": {
             "websites": "{items,plural, =1 {Sito Web} other {Siti Web}}",
             "games": "{items,plural, =1 {Videogioco} other {Videogiochi}}",
+            "designs": "{items,plural, =1 {Design} other {Design}}",
             "about":"About Me",
             "projectShowcase":"Portfolio"
         },

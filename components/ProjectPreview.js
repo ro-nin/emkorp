@@ -27,13 +27,22 @@ export default function ProjectPreview({ data, selected, onPress }) {
                     src={imageUrl}
                     layout="fill"
                     objectFit="cover"
-                    
+
                 />
             </div>
             {selected &&
                 <div className='flex flex-col  lg:hidden border pb-2 px-2 border-black '>
                     <p className="text-black text-xl font-bold break-words">{data.title}</p>
-                    <p className="text-black text-l ">{data.category == 'game' ? sharedTranslator('sections.games', { items: 1 }) : sharedTranslator('sections.websites', { items: 1 })},{parseISO(data.date).getFullYear()}</p>
+                    <p className="text-black text-l ">
+                        {
+                            sharedTranslator('sections.'+data.category, {items: 1 })
+
+                        }
+                        ,
+                        {
+                            parseISO(data.date).getFullYear()
+                        }
+                    </p>
                     <div className='previewIcons flex justify-center gap-2 pt-2 min-h-[2rem] text-black'>
                         {data.stack.map(item => getIcon(item, 45))}
                     </div>

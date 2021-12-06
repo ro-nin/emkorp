@@ -11,6 +11,7 @@
         "sections": {
             "websites": "{items,plural, =1 {Website} other {Websites}}",
             "games": "{items,plural, =1 {Videogame} other {Videogames}}",
+            "designs": "{items,plural, =1 {Design} other {Designs}}",
             "about":"About Me",
             "projectShowcase":"Portfolio"
         },

@@ -50,7 +50,7 @@ export default function ProjectsShowcase({ projects }) {
                         //TODO since goes from hidden to visibile, animation won't be seen
                         }
                         <p className="transition-all duration-500 ease-in-out text-black text-4xl  break-words">{selectedProject.title}</p>
-                        <p className="transition-all duration-500 ease-in-out text-black text-3xl font-extralight">{selectedProject.category == 'game' ? sharedTranslator('sections.games', { items: 1 }) : sharedTranslator('sections.websites', { items: 1 })},{parseISO(selectedProject.date).getFullYear()}</p>
+                        <p className="transition-all duration-500 ease-in-out text-black text-3xl font-extralight">{sharedTranslator('sections.'+selectedProject.category, {items: 1 })},{parseISO(selectedProject.date).getFullYear()}</p>
                         <p className="transition-all duration-500 ease-in-out text-black text-xl font-light"> {selectedProject.previewText} </p>
                         <div className='transition-all duration-500 ease-in-out previewIcons flex justify-start gap-2 pt-6 min-h-[2rem] text-black'>
                             {selectedProject.stack.map(item => getIcon(item, 45))}

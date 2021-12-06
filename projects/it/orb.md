@@ -1,7 +1,7 @@
 ---
-title: EMKORP
+title: The Orb Ponderer
 date: "2021-12-06"
-category: design
+category: designs
 previewText: Design grafico per una micro-estensione del gioco di ruolo Mork Borg.
 images:
     - orb/orbBlue.jpg
