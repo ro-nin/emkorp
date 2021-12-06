@@ -2,11 +2,11 @@
 title: The Orb Ponderer
 date: "2021-12-06"
 category: designs
-previewText: Graphic Design for a micro-extension/encounter of the acclaimed rpg Mork Borg.
+previewText: Graphic Design for a micro-extension/encounter of the acclaimed tabletop RPG MÖRK BORG.
 images:
     - orb/orbBlue.jpg
 
-projectUrl: 
+projectUrl: https://dr-locrian.itch.io/the-orb-ponderer 
 #projectSourceUrl: 
 stack:
     - Illustrator

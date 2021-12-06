@@ -11,7 +11,7 @@ images:
 
 
 projectUrl: http://emkorp.vercel.app
-#projectSourceUrl: 
+projectSourceUrl: https://github.com/ro-nin/emkorp
 stack:
     - nextjs
     - tailwindcss
