@@ -7,12 +7,14 @@ import ProjectButtons from "../../components/ProjectButtons"
 import { parseISO } from 'date-fns'
 import { getIcon } from "../../Resources"
 import Head from 'next/head'
+import  ReactMarkdown  from "react-markdown";
 export default function Project({ postData }) {
     const t = useTranslations('project');
     const intl = useIntl();
     const dateTime = parseISO(postData.date);
+    const markdownContent = postData.markdownContent;
 
-    return <div  className="flex flex-col pr-12  gap-1">
+    return <div className="flex flex-col pr-12  gap-1">
         <Head>
             <title>{postData.title}</title>
             <link rel="icon" href="/favicon.ico" />
@@ -54,9 +56,10 @@ export default function Project({ postData }) {
 
         </div>
         <div
-            className={markdownStyles['markdown']}
-            dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
-        />
+            className={markdownStyles['markdown']}>
+            <ReactMarkdown>{markdownContent}</ReactMarkdown>
+        </div>
+
         <div className="flex md:flex-row flex-col gap-4 mt-6 mx-auto">
             <ProjectButtons project={postData} buttonStyle={'whiteBorderButton'} />
         </div>

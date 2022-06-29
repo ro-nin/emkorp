@@ -36,3 +36,5 @@ public/bioPhoto.jpg
 
 .env
 /.vscode/
+package-lock.json
+yarn.lock
