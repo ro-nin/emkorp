@@ -14,7 +14,8 @@ export default function ProjectPreview({ data, selected, onPress }) {
     const grayscale = selected ? ' grayscale-0 hover:grayscale-0' : ' grayscale hover:grayscale-0'
     const borderStyle = selected ? ' lg:shadowed' : '  '
     const fullStyle = baseStyle + size + grayscale + borderStyle;
-    let imageUrl = '/' + data.images[0];
+    let imageUrl = '/' + (data.previewImage??data.images[0]); 
+    console.log(data)
     return (
 
         <>

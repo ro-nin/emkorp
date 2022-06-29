@@ -1,5 +1,5 @@
 
-import { SiNextdotjs,SiTailwindcss,SiStrapi,SiAdobeillustrator} from 'react-icons/si'
+import { SiNextdotjs,SiTailwindcss,SiStrapi,SiAdobeillustrator,SiPrisma,SiSupabase,SiTypescript} from 'react-icons/si'
 import { FaLinkedin,FaUnity,FaAndroid,FaUikit,FaGithub,FaNodeJs} from 'react-icons/fa'
 import { BsBootstrapFill } from 'react-icons/bs'
 import { DiMongodb } from 'react-icons/di'
@@ -66,6 +66,12 @@ export function getIcon(iconName, size) {
             return <SiStrapi key={SiStrapi}  size={size} />;
         case 'mongodb':
             return <DiMongodb key={DiMongodb}  size={size} />;
+        case 'prisma':
+            return <SiPrisma key={SiPrisma}  size={size} />;
+        case 'supabase':
+            return <SiSupabase key={SiSupabase}  size={size} />;
+        case 'typescript':
+            return <SiTypescript key={SiTypescript}  size={size} />;
         default:
             return undefined;
     }

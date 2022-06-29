@@ -2,7 +2,6 @@
 title: Royal Battle Simulator
 date: "2021-07-25"
 category: websites
-previewImage: rbs/logo.svg
 projectUrl: https://royalbattlesimulator.herokuapp.com/
 images:
     - rbs/scr.jpg

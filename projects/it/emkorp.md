@@ -2,7 +2,6 @@
 title: EMKORP
 date: "2021-12-01"
 category: websites
-previewImage: 
 previewText: Il sito che stai visualizzando, creato come vetrina del progresso fatto negli anni. Meta vero?
 images:
     - emkorp/emkorp_29-11.webp

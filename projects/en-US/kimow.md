@@ -2,7 +2,6 @@
 title: Kimochi Warui
 date: "2021-11-08"
 category: websites
-previewImage: kimow/logo512.jpg
 images:
     - kimow/kimoscreen1.jpg
     - kimow/mobile.jpg

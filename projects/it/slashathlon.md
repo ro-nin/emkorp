@@ -2,7 +2,6 @@
 title: Slashathlon (Demo)
 date: "2019-07-27"
 category: games
-previewImage: slash/slashlogo.jpg
 images:
     - slash/game.jpg
     - slash/menucrop.jpg
