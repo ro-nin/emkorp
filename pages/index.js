@@ -18,6 +18,7 @@ export default function Home({ sortedProjectsData, }) {
     Resources.emailContact,
     Resources.githubContact,
     Resources.linkedinContact,
+    Resources.igContact,
   ]
 
   if (Router.locale === 'it') {

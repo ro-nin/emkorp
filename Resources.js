@@ -1,10 +1,10 @@
 
-import { SiNextdotjs,SiTailwindcss,SiStrapi,SiAdobeillustrator,SiPrisma,SiSupabase,SiTypescript} from 'react-icons/si'
+import { SiNextdotjs,SiTailwindcss,SiStrapi,SiAdobeillustrator,SiPrisma,SiSupabase,SiTypescript,SiFramer} from 'react-icons/si'
 import { FaLinkedin,FaUnity,FaAndroid,FaUikit,FaGithub,FaNodeJs} from 'react-icons/fa'
 import { BsBootstrapFill } from 'react-icons/bs'
 import { DiMongodb } from 'react-icons/di'
 import { RiTranslate } from 'react-icons/ri'
-import { AiOutlineMail,AiOutlineIdcard } from 'react-icons/ai'
+import { AiOutlineMail,AiOutlineIdcard,AiOutlineInstagram } from 'react-icons/ai'
 
 
 export const githubContact = {
@@ -17,20 +17,25 @@ export const linkedinContact = {
     icon: <FaLinkedin/>,
     url: 'https://www.linkedin.com/in/emanuele-cioffi/'
 }
+export const igContact = {
+    label: 'Instagram',
+    icon: <AiOutlineInstagram/>,
+    url: 'https://www.instagram.com/emkorporation/'
+}
 export const emailContact = {
     label: 'Email',
     icon: <AiOutlineMail/>,
     url: 'emailto:emkorporation@gmail.com'
 }
 export const cvEN = {
-    label: 'CV',
+    label: 'RESUME',
     icon: <AiOutlineIdcard/>,
-    url: 'cv_2021_en_noP.pdf'
+    url: 'cv_newVersion_2022_eng.pdf'
 }
 export const cvIT = {
-    label: 'CV',
+    label: 'C.V.',
     icon: <AiOutlineIdcard/>,
-    url: 'cv_2021_it_noP.pdf'
+    url: 'cv_newVersion_2022_ita.pdf'
 }
 export const translation = {
     label: 'translate',
@@ -72,6 +77,8 @@ export function getIcon(iconName, size) {
             return <SiSupabase key={SiSupabase}  size={size} />;
         case 'typescript':
             return <SiTypescript key={SiTypescript}  size={size} />;
+        case 'framermotion':
+            return <SiFramer key={SiFramer}  size={size} />;
         default:
             return undefined;
     }
