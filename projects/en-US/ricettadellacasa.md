@@ -3,7 +3,7 @@ title: RicettaDellaCasa
 date: "2022-06-27"
 category: websites
 previewImage: recipe/homepage-desktop.png
-previewText: Portale per creazione e condivisione di ricette
+previewText: Web portal for creating cooking recipes.
 images:
     - recipe/ricetta-mobile-anim_comp.gif
     - recipe/recipes-desktop.png
