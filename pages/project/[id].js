@@ -7,7 +7,7 @@ import ProjectButtons from "../../components/ProjectButtons"
 import { parseISO } from 'date-fns'
 import { getIcon } from "../../Resources"
 import Head from 'next/head'
-import  ReactMarkdown  from "react-markdown";
+import ReactMarkdown from "react-markdown";
 export default function Project({ postData }) {
     const t = useTranslations('project');
     const intl = useIntl();
@@ -77,6 +77,17 @@ export default function Project({ postData }) {
                         layout="fill"
                         objectFit="contain"
                     />
+                </div>
+            )}
+            {postData.videos&&postData.videos.map(item =>
+                <div key={item} className="relative border-b border-opacity-5
+                 w-[75vw] h-[40vh]  
+                 md:min-w-75vw md:min-h-75vh  
+                 lg:max-w-full py-2">
+
+                    <video key={item} controls>
+                        <source src={'/' + item} type="video/mp4"></source>
+                    </video>
                 </div>
             )}
         </div>

@@ -1,5 +1,5 @@
 
-import { SiNextdotjs,SiTailwindcss,SiStrapi,SiAdobeillustrator,SiPrisma,SiSupabase,SiTypescript,SiFramer} from 'react-icons/si'
+import { SiNextdotjs,SiTailwindcss,SiStrapi,SiAdobeillustrator,SiPrisma,SiSupabase,SiTypescript,SiFramer,SiThreedotjs,SiBlender} from 'react-icons/si'
 import { FaLinkedin,FaUnity,FaAndroid,FaUikit,FaGithub,FaNodeJs} from 'react-icons/fa'
 import { BsBootstrapFill } from 'react-icons/bs'
 import { DiMongodb } from 'react-icons/di'
@@ -79,6 +79,10 @@ export function getIcon(iconName, size) {
             return <SiTypescript key={SiTypescript}  size={size} />;
         case 'framermotion':
             return <SiFramer key={SiFramer}  size={size} />;
+        case 'threejs':
+            return <SiThreedotjs key={SiThreedotjs}  size={size} />;
+        case 'blender':
+            return <SiBlender key={SiBlender}  size={size} />;
         default:
             return undefined;
     }

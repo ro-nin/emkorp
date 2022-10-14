@@ -3,7 +3,7 @@
         "shortBio": {
             "educationTitle": "Laureato Magistrale in Informatica",
             "quote": "",
-            "bioText":"Sviluppatore Software, appassionato di un po' troppe cose. Mi concentro su sviluppo e web design dal 2021."
+            "bioText":"Sviluppatore Software, web - game - a/v"
         }
     },
     "shared": {
@@ -19,7 +19,7 @@
             "readMore": "Leggi di più",
             "source": "Codice Sorgente"
         }        ,
-        "cvURL": "/cv_2021_it_noP.pdf"
+        "cvURL": "/cv_newVersion_2022_ita.pdf"
     },
     "project":{
         "released":"Rilasciato a "
