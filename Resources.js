@@ -1,6 +1,6 @@
 
 import { SiNextdotjs,SiTailwindcss,SiStrapi,SiAdobeillustrator,SiPrisma,SiSupabase,SiTypescript,SiFramer,SiThreedotjs,SiBlender} from 'react-icons/si'
-import { FaLinkedin,FaUnity,FaAndroid,FaUikit,FaGithub,FaNodeJs} from 'react-icons/fa'
+import { FaLinkedin,FaUnity,FaAndroid,FaUikit,FaGithub,FaNodeJs,FaTwitter} from 'react-icons/fa'
 import { BsBootstrapFill } from 'react-icons/bs'
 import { DiMongodb } from 'react-icons/di'
 import { RiTranslate } from 'react-icons/ri'
@@ -21,6 +21,11 @@ export const igContact = {
     label: 'Instagram',
     icon: <AiOutlineInstagram/>,
     url: 'https://www.instagram.com/emkorporation/'
+}
+export const twitterContact = {
+    label: 'Twitter',
+    icon: <FaTwitter/>,
+    url: 'https://www.twitter.com/emkorporation/'
 }
 export const emailContact = {
     label: 'Email',

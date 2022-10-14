@@ -14,17 +14,18 @@ export default function Home({ sortedProjectsData, }) {
 
   const Router = useRouter()
 
-  const shortContacts = [
+  const contacts = [
     Resources.emailContact,
     Resources.githubContact,
     Resources.linkedinContact,
     Resources.igContact,
+    Resources.twitterContact,
   ]
 
   if (Router.locale === 'it') {
-    shortContacts.push(Resources.cvIT)
+    contacts.push(Resources.cvIT)
   } else {
-    shortContacts.push(Resources.cvEN)
+    contacts.push(Resources.cvEN)
   }
 
   return (
@@ -84,8 +85,8 @@ export default function Home({ sortedProjectsData, }) {
       </Script>
 
       <main id="main" className="text-center mb-0 min-h-fullscreen ">
-        <LandingIntro links={shortContacts} />
-        <AboutMe links={shortContacts} />
+        <LandingIntro links={contacts.slice(0,3)} />
+        <AboutMe links={contacts} />
         <ProjectsShowcase projects={allProjects} />
 
       </main>

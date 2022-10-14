@@ -83,9 +83,9 @@ export default function Project({ postData }) {
                 <div key={item} className="relative border-b border-opacity-5
                  w-[75vw] h-[40vh]  
                  md:min-w-75vw md:min-h-75vh  
-                 lg:max-w-full py-2">
+                 lg:max-w-full py-2 flex justify-center">
 
-                    <video key={item} controls>
+                    <video key={item} className='' controls>
                         <source src={'/' + item} type="video/mp4"></source>
                     </video>
                 </div>
