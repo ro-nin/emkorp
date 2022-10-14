@@ -3,7 +3,7 @@
         "shortBio": {
             "educationTitle": "Master's Degree in Computer Science",
             "quote": "",
-            "bioText":"Software Developer passioned about too many things. Currently based in Italy. Focusing on web development and design since 2021."
+            "bioText":"Software Developer passioned about too many things. Web & game development. Currently based in Italy."
 
         }
     },
@@ -20,7 +20,7 @@
             "readMore":"Read More",
             "source":"Source Code"
         },
-        "cvURL": "/cv_2021_en_noP.pdf"
+        "cvURL": "/cv_newVersion_2022_eng.pdf"
 
 
     },

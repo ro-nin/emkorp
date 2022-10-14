@@ -31,7 +31,7 @@ export default function AboutMe({ links }) {
 
                 </div>
 
-                <div className='LinkContainer  flex  flex-row flex-wrap lg:flex-col gap-2 justify-center px-2 md:px-0'>
+                <div className='LinkContainer  flex  flex-row flex-wrap lg:flex-col gap-2 justify-center px-7 '>
                     {buttons.map(link => link)}
                 </div>
 
