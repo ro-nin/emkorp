@@ -2,11 +2,11 @@
 title: Royal Battle Simulator
 date: "2021-07-25"
 category: websites
-projectUrl: https://royalbattlesimulator.herokuapp.com/
 images:
     - rbs/scr.jpg
     - rbs/mobile.jpg
-
+videos:
+    - rbs/rbs.mp4
 previewText: Creatore di Battle Royale testuali tra personaggi creati dall'utente
 stack:
     - nodejs
@@ -23,3 +23,4 @@ Consiste di una piattaforma per l'hosting di partite sul modello *Battle Royale*
 Il sito è stato pensato con l'idea fondamentale di garantire persistenza delle partite effettuate e soprattutto dei roster creati, dal momento che concorrenti noti richiedevano la creazione da zero (oltre che l'impossibilità di fare upload di immagini custom) per ogni partita che si voleva effettuare. La condivisione pubblica permette inoltre di evitare la creazione di screenshot, come si era solito fare su altre piattaforme simili in passato.
 
 Lo sforzo profuso è stato indirizzato principalmente nella creazione del back-end, mentre lo sviluppo dell'interfaccia si è fermato alla fase del prototipo funzionale, e verrà ripensata integralmente per future versioni.
+
