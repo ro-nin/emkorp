@@ -18,20 +18,20 @@ export default function AboutMe({ links }) {
         </a>)
     }
     return (
-        <div id="about" className='About min-h-[100vh] bg-black'>
+        <div id="about" className='About h-[80vh] bg-black'>
 
-            <div className=' pt-20 flex flex-col lg:flex-row  justify-center gap-3 md:gap-6   items-center max-h-[80vh] '>
+            <div className=' pt-20 flex flex-col lg:flex-row  justify-center gap-3 md:gap-6 items-center   lg:items-start  '>
                 <p className='text-3xl lg:text-6xl text-white  text-left'>
                     {sharedT('sections.about').toUpperCase()}
                 </p>
-                <div className='AboutMe_Left max-w-[80vw] lg:max-w-[45vw] text-left'>
-                    <p className='text-white font-semibold text-xl md:text-4xl '>Emanuele Cioffi</p>
-                    <p className='text-white font-thin text-lg md:text-2xl md:ml-1'>{indexT('shortBio.educationTitle')}</p>
-                    <p className='text-white font-light text-base md:text-xl md:mt-2 md:ml-2'>{indexT('shortBio.bioText')} </p>
+                <div className='AboutMe_Left max-w-[80vw] lg:max-w-[45vw] text-left lg:self-start'>
+                    <p className='text-white font-thin text-xl md:text-3xl '>Emanuele Cioffi</p>
+                    <p className='text-white font-light  text-lg md:text-2xl md:ml-1 mt-2 '>{indexT('shortBio.educationTitle')}</p>
+                    <p className='text-white font-normal text-base md:text-xl mt-4 md:ml-2'>{indexT('shortBio.bioText')} </p>
 
                 </div>
 
-                <div className='LinkContainer  flex  flex-row flex-wrap lg:flex-col gap-2 justify-center px-7 '>
+                <div className='LinkContainer  flex  flex-row flex-wrap lg:flex-col gap-2 justify-center px-7 lg:self-end '>
                     {buttons.map(link => link)}
                 </div>
 

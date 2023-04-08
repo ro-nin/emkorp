@@ -13,14 +13,15 @@ export default function Footer() {
     const shortContacts = [
         Strings.emailContact,
         Strings.githubContact,
-        Strings.linkedinContact,
+        Strings.twitterContact,
+        // Strings.linkedinContact,
       ]
     
-      if(Router.locale === 'it'){
-        shortContacts.push(Strings.cvIT)
-      }else{
-        shortContacts.push(Strings.cvEN)
-      }
+    //   if(Router.locale === 'it'){
+    //     shortContacts.push(Strings.cvIT)
+    //   }else{
+    //     shortContacts.push(Strings.cvEN)
+    //   }
 
     let buttons = [];
     for (const link of shortContacts) {
