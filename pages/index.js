@@ -17,16 +17,16 @@ export default function Home({ sortedProjectsData, }) {
   const contacts = [
     Resources.emailContact,
     Resources.githubContact,
-    Resources.linkedinContact,
+    // Resources.linkedinContact,
     // Resources.igContact,
     Resources.twitterContact,
   ]
 
-  if (Router.locale === 'it') {
-    contacts.push(Resources.cvIT)
-  } else {
-    contacts.push(Resources.cvEN)
-  }
+  // if (Router.locale === 'it') {
+  //   contacts.push(Resources.cvIT)
+  // } else {
+  //   contacts.push(Resources.cvEN)
+  // }
 
   return (
     <>
