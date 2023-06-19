@@ -8,7 +8,8 @@ import { getIcon } from "../Resources"
 
 import { parseISO } from 'date-fns'
 import ProjectButtons from './ProjectButtons';
-
+import Link from 'next/link';
+import { AiOutlineLink } from 'react-icons/ai'
 export default function ProjectsShowcase({ projects }) {
 
     const sharedTranslator = useTranslations('shared');
@@ -20,7 +21,7 @@ export default function ProjectsShowcase({ projects }) {
     useEffect(() => {
         setSelectedProject(null)
         return
-    },[Router.locale] )
+    }, [Router.locale])
 
     const projectsContainerBaseStyle = 'ProjectContainer  flex flex-col lg:flex-row min-h-[100%]  py-4 gap-0 lg:gap-3  justify-center min-w-[100%] ';
     const projectsContainerStyleWidth = selectedProject ? ' lg:min-w-[70%]' : ' lg:min-w-[100%]';
@@ -37,9 +38,20 @@ export default function ProjectsShowcase({ projects }) {
 
         <>
 
-            <div className=' lg:h-[100vh] w-[100%] bg-white  duration-500 ease-in-out  '>
-                <p id="portfolio" className='bg-white  text-3xl lg:text-6xl text-black text-center  pt-12 pb-2 '>{sharedTranslator('sections.projectShowcase').toUpperCase()}
-                </p>
+            <div className=' lg:h-[95vh] w-[100%] bg-white  duration-500 ease-in-out  '>
+                <div className='flex gap-4 text-black items-end justify-center pt-12 pb-2'>
+                    <p id="portfolio" className='bg-white  text-3xl lg:text-6xl  text-center   '>{sharedTranslator('sections.projectShowcase').toUpperCase()}
+                    </p>
+                    <Link href='/archive'><button className='flex hover:underline items-center italic' >
+                        {'('}
+                        <AiOutlineLink />
+
+                        {sharedTranslator('sections.archive')}
+                        {')'}
+                    </button>
+                    </Link>
+                </div>
+
                 <div className="ProjectShowcase lg:min-h-[90%] p-3 lg:p-6   flex   ">
                     <div className={projectsContainerStyle}  >
                         {projects.map(project => <ProjectPreview key={project.title} onPress={() => clickOnProject(project)} data={project} selected={selectedProject === project ? true : false} />)}
@@ -47,10 +59,10 @@ export default function ProjectsShowcase({ projects }) {
                     {selectedProject && <div className="transition-all duration-500 ease-in-out ProjectDetailsPreview p-4 text-left   hidden  lg:flex lg:flex-col lg:justify-center lg:max-w-[30%] lg:min-w-[30%]   ">
 
                         {
-                        //TODO since goes from hidden to visibile, animation won't be seen
+                            //TODO since goes from hidden to visibile, animation won't be seen
                         }
                         <p className="transition-all duration-500 ease-in-out text-black text-4xl  break-words">{selectedProject.title}</p>
-                        <p className="transition-all duration-500 ease-in-out text-black text-3xl font-extralight">{sharedTranslator('sections.'+selectedProject.category, {items: 1 })},{parseISO(selectedProject.date).getFullYear()}</p>
+                        <p className="transition-all duration-500 ease-in-out text-black text-3xl font-extralight">{sharedTranslator('sections.' + selectedProject.category, { items: 1 })},{parseISO(selectedProject.date).getFullYear()}</p>
                         <p className="transition-all duration-500 ease-in-out text-black text-xl font-light"> {selectedProject.previewText} </p>
                         <div className='transition-all duration-500 ease-in-out previewIcons flex justify-start gap-2 pt-6 min-h-[2rem] text-black'>
                             {selectedProject.stack.map(item => getIcon(item, 45))}
