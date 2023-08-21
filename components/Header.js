@@ -25,6 +25,7 @@ export default function Header({ underlineLinks }) {
             <Link href="/#main" passHref><a className={linkStyle}>Home</a></Link>
             <Link href="/#about" passHref><a className={linkStyle}>{sharedTranslator('sections.about')}</a></Link>
             <Link href="/#portfolio" passHref ><a className={linkStyle}>{sharedTranslator('sections.projectShowcase')}</a></Link>
+            <Link href="/#archive" passHref ><a className={linkStyle}>{sharedTranslator('sections.archive')}</a></Link>
 
             <Link passHref href={{pathname, query}} locale={targetLocale}>
                 <a className={linkStyle}>
