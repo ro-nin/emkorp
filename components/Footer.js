@@ -49,7 +49,7 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <p className='text-black text-lg font-light text-center'>CC 2021</p>
+                <p className='text-black text-lg font-light text-center'>CC 2021-2023</p>
 
                 <a rel="license" className='flex justify-center text-center center' href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
 
