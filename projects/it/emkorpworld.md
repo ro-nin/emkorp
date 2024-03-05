@@ -11,7 +11,7 @@ videos:
     - world/squareReel.mp4
 
 
-projectUrl: https://emkorp.world
+projectUrl: https://emkorpworld.vercel.app/
 stack:
     - nextjs
     - threejs
